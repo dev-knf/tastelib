@@ -18,6 +18,9 @@ function ArrowIcon() {
 export function Footer() {
   return (
     <footer className="mb-16">
+      <p className="mt-8 text-neutral-600 dark:text-neutral-300">
+        © {new Date().getFullYear()} tastelib CTO
+      </p>
       <ul className="font-sm mt-8 flex flex-col space-y-2 space-x-0 text-neutral-600 md:flex-row md:space-y-0 md:space-x-4 dark:text-neutral-300">
         <li>
           <a
@@ -53,9 +56,6 @@ export function Footer() {
           </a>
         </li>
       </ul>
-      <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} tastelib CTO
-      </p>
     </footer>
   )
 }
