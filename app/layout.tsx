@@ -5,6 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils"
 import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Navbar } from "@/components/nav"
+import Footer from "@/components/footer"
 
 const fontSans = Geist({
   subsets: ["latin"],
@@ -32,8 +34,14 @@ export default function RootLayout({
         fontSans.variable
       )}
     >
-      <body>
-        <ThemeProvider>{children}</ThemeProvider>
+      <body className="mx-4 mt-8 max-w-xl antialiased lg:mx-auto">
+        <ThemeProvider>
+          <Navbar />
+          <main className="mt-6 flex min-w-0 flex-auto flex-col px-2 md:px-0">
+            {children}
+          </main>
+          <Footer />
+        </ThemeProvider>
         <Analytics />
         <SpeedInsights />
       </body>
