@@ -157,9 +157,13 @@ html {
   @apply underline decoration-neutral-400 decoration-[0.1em] underline-offset-2 transition-all dark:decoration-neutral-600;
 }
 
-.prose .anchor:after {
-  @apply text-neutral-300 dark:text-neutral-700;
+.prose .anchor::after {
   content: "#";
+  color: var(--color-neutral-300);
+}
+
+.dark .prose .anchor::after {
+  color: var(--color-neutral-700);
 }
 
 .prose *:hover > .anchor {
