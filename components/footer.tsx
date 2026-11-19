@@ -41,7 +41,7 @@ export function Footer() {
             href="https://www.youtube.com/@tastelibCTO"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">youtube</p>
+            <p className="ml-2 h-7">YouTube</p>
           </a>
         </li>
         <li>
@@ -52,7 +52,7 @@ export function Footer() {
             href="https://github.com/tastelib-cto/tastelib"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">github</p>
+            <p className="ml-2 h-7">GitHub</p>
           </a>
         </li>
       </ul>
