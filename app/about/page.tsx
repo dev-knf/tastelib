@@ -1,14 +1,20 @@
-import About from "./about.mdx"
-
-export const metadata = {
-  title: "About",
-  description: "About tastelib",
-}
+import { formatDate } from "@/lib/utils"
+import About, { metadata } from "./about.mdx"
 
 export default function Page() {
   return (
     <section>
-      <About />
+      <h1 className="title text-2xl font-semibold tracking-tighter">
+        {metadata.title}
+      </h1>
+      <div className="mt-2 mb-8 flex items-center justify-between text-sm">
+        <p className="text-sm text-neutral-600 dark:text-neutral-400">
+          {formatDate(metadata.publishedAt)}
+        </p>
+      </div>
+      <article className="prose">
+        <About />
+      </article>
     </section>
   )
 }
