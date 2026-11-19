@@ -1,5 +1,5 @@
 import { formatDate } from "@/lib/utils"
-import About, { metadata } from "./about.mdx"
+import About, { metadata } from "./content.mdx"
 
 export default function Page() {
   return (

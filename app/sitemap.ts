@@ -1,4 +1,4 @@
-import { metadata as aboutMetadata } from "./about/about.mdx"
+import { metadata as aboutMetadata } from "./about/content.mdx"
 
 type ArticleMetadata = {
   url: string
