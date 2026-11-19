@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Navbar } from "@/components/nav"
 import { Footer } from "@/components/footer"
-import { baseUrl } from "./sitemap"
+import { baseUrl, description } from "@/lib/site"
 
 const fontSans = Geist({
   subsets: ["latin"],
@@ -23,15 +23,15 @@ const fontMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Next.js Portfolio Starter",
-    template: "%s | Next.js Portfolio Starter",
+    default: "tastelib",
+    template: "%s | tastelib",
   },
-  description: "This is my portfolio.",
+  description,
   openGraph: {
-    title: "My Portfolio",
-    description: "This is my portfolio.",
+    title: "tastelib",
+    description,
     url: baseUrl,
-    siteName: "My Portfolio",
+    siteName: "tastelib",
     locale: "en_US",
     type: "website",
   },
