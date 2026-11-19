@@ -1,22 +1,12 @@
 import type { MDXComponents } from "mdx/types"
 import Image, { ImageProps } from "next/image"
 import React from "react"
+import { slugify } from "./lib/utils"
 
 // This file allows you to provide custom React components
 // to be used in MDX files. You can import and use any
 // React component you want, including inline styles,
 // components from other libraries, and more.
-
-function slugify(str) {
-  return str
-    .toString()
-    .toLowerCase()
-    .trim() // Remove whitespace from both ends of a string
-    .replace(/\s+/g, "-") // Replace spaces with -
-    .replace(/&/g, "-and-") // Replace & with 'and'
-    .replace(/[^\w\-]+/g, "") // Remove all non-word characters except for -
-    .replace(/\-\-+/g, "-") // Replace multiple - with single -
-}
 
 function createHeading(level: number) {
   const Heading = ({ children }) => {
