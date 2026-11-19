@@ -1,10 +1,9 @@
+import { baseUrl } from "@/lib/site"
 import { ContentMetadata } from "@/lib/utils"
 
 import { metadata as skillsMetadata } from "./skills/content.mdx"
 import { metadata as experimentsMetadata } from "./experiments/content.mdx"
 import { metadata as aboutMetadata } from "./about/content.mdx"
-
-export const baseUrl = "https://tastelib.vercel.app"
 
 export default async function sitemap() {
   const routes = [
