@@ -1,5 +1,7 @@
 import { formatDate } from "@/lib/utils"
-import About, { metadata } from "./content.mdx"
+import Content, { metadata } from "./content.mdx"
+
+export { metadata }
 
 export default function Page() {
   return (
@@ -13,7 +15,7 @@ export default function Page() {
         </p>
       </div>
       <article className="prose">
-        <About />
+        <Content />
       </article>
     </section>
   )

@@ -1,14 +1,14 @@
-export const metadata = {
-  title: "Experiments",
-  description: "AIGC taste experiments",
-}
+import Content, { metadata } from "./content.mdx"
+
+export { metadata }
 
 export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        Experiments
+        {metadata.title}
       </h1>
+      <Content />
     </section>
   )
 }
