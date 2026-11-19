@@ -34,7 +34,7 @@ export function Navbar() {
             })}
           </div>
         </nav>
-        <div className="font-mono text-xs text-muted-foreground">
+        <div className="ml-1 font-mono text-xs text-muted-foreground">
           (Press <kbd>d</kbd> to toggle dark mode)
         </div>
       </div>
