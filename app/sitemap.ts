@@ -1,6 +1,6 @@
 import { metadata as aboutMetadata } from "./about/content.mdx"
 
-type ArticleMetadata = {
+type ContentMetadata = {
   url: string
   title: string
   description: string
@@ -10,7 +10,7 @@ type ArticleMetadata = {
 export const baseUrl = "https://tastelib.vercel.app"
 
 export default async function sitemap() {
-  const routes = [aboutMetadata satisfies ArticleMetadata].map((metadata) => ({
+  const routes = [aboutMetadata satisfies ContentMetadata].map((metadata) => ({
     url: `${baseUrl}${metadata.url}`,
     lastModified: metadata.publishedAt,
   }))
