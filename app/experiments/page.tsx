@@ -8,7 +8,9 @@ export default function Page() {
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
         {metadata.title}
       </h1>
-      <Content />
+      <div className="prose">
+        <Content />
+      </div>
     </section>
   )
 }
