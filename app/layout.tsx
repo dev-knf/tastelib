@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Navbar } from "@/components/nav"
 import { Footer } from "@/components/footer"
-import { baseUrl, description } from "@/lib/site"
+import { baseUrl, description, keywords } from "@/lib/site"
 
 const fontSans = Geist({
   subsets: ["latin"],
@@ -46,6 +46,7 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  keywords,
 }
 
 export default function RootLayout({
