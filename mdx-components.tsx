@@ -9,7 +9,7 @@ import { slugify } from "./lib/utils"
 // components from other libraries, and more.
 
 function createHeading(level: number) {
-  const Heading = ({ children }) => {
+  const Heading = ({ children }: { children: React.ReactNode }) => {
     const slug = slugify(children)
     return React.createElement(
       `h${level}`,
