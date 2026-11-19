@@ -1,13 +1,8 @@
+import { ContentMetadata } from "@/lib/utils"
+
 import { metadata as skillsMetadata } from "./skills/content.mdx"
 import { metadata as experimentsMetadata } from "./experiments/content.mdx"
 import { metadata as aboutMetadata } from "./about/content.mdx"
-
-type ContentMetadata = {
-  url: string
-  title: string
-  description: string
-  publishedAt: string
-}
 
 export const baseUrl = "https://tastelib.vercel.app"
 

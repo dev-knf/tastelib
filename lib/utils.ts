@@ -1,5 +1,12 @@
 export { cn } from "cn"
 
+export type ContentMetadata = {
+  url: string
+  title: string
+  description: string
+  publishedAt: string
+}
+
 export function slugify(str: { toString: () => string }) {
   return str
     .toString()
